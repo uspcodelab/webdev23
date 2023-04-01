@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from '../../../../../logo.svg';
+import Logo from '../../../../../Logo';
 import { StyledWrapper, StyledTitle } from './styled';
 
 const Success = () => (

@@ -10,7 +10,7 @@ const Content = () => {
   return (
     <StyledWrapper>
       <StyledModal>
-        {step === 3 ? <Feedback /> : <Question />}
+        {step !== 3 ? <Feedback /> : <Question />}
         <Loading
           style={{
             position: 'absolute',

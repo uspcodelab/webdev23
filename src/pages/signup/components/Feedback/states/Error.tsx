@@ -1,9 +1,9 @@
-import { ReactComponent as Logo } from './error-icon.svg';
+import ErrorIcon from './ErrorIcon';
 import { StyledWrapper, StyledTitle } from './styled';
 
 const Error = () => (
   <StyledWrapper>
-    <Logo
+    <ErrorIcon
       style={{
         transform: 'scale(.3)',
         fill: 'rgb(255, 120, 37)',
