@@ -1,5 +1,5 @@
+import { Answers } from '@/pages/signup/context/models';
 import { useQuery } from 'react-query';
-import { Answers } from '../pages/SignUp/context/models';
 import { postSignup } from './googleSpreadsheets';
 
 export const useSignUpPost = (props: Answers) =>
