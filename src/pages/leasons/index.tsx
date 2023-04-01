@@ -1,4 +1,5 @@
 import { getYoutubePlaylist } from '@/services/youtube';
+import LeasonsContainer from '@/containers/Leasons';
 import Head from 'next/head';
 
 export const getServerSideProps = async () => {
@@ -23,7 +24,7 @@ const Leasons = ({ data }: any) => (
         href="/favicon.ico"
       />
     </Head>
-    <div>Videos</div>
+    <LeasonsContainer data={data} />
   </>
 );
 
