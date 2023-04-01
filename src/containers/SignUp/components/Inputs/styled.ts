@@ -19,7 +19,7 @@ export const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const StyledTextArea = styled.textarea`
-  width: calc(100% - 16px);
+  width: calc(100% - 48px);
   font: inherit;
   font-size: inherit;
   padding: 8px;

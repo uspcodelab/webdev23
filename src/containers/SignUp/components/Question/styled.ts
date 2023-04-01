@@ -27,6 +27,6 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledTitle = styled(StyledFader)`
-  font-size: 2.8em;
+  font-size: 2.7em;
   font-weight: bold;
 `;

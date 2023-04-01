@@ -21,5 +21,6 @@ export const StyledOptions = styled.button<StyledOptionsProps>`
 
 export const StyledWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 `;

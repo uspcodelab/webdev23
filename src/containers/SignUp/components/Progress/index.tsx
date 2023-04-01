@@ -6,17 +6,17 @@ interface ProgressProps {
 
 const StyledWrapper = styled.div`
   position: absolute;
-  bottom: 96px;
+  bottom: 72px;
   left: 0;
 `
 
 const StyledBar = styled.div<ProgressProps>`
   border: 2px black solid;
-  width: calc(545px * ${(props) => props.value});
+  width: calc(594px * ${(props) => props.value});
   transition: .6s;
 
   @media screen and (max-width: 561px) {
-    width: calc(99vw * ${(props) => props.value});
+    width: calc(98vw * ${(props) => props.value});
    }
 `
 
