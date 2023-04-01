@@ -1,5 +1,6 @@
 import ActionBar from '../ActionBar';
 import Inputs from '../Inputs';
+import Progress from '../Progress';
 import { useQuestion } from './hook';
 import { StyledFader, StyledTitle, StyledWrapper } from './styled';
 
@@ -31,6 +32,7 @@ const Question = () => {
       >
         <Input />
       </StyledFader>
+      <Progress value={(currentStep + 1)  / 3}/>
       <ActionBar currentStep={currentStep} />
     </StyledWrapper>
   );

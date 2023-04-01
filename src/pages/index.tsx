@@ -1,3 +1,4 @@
+import SignUpContainer from '@/containers/SignUp';
 import Head from 'next/head';
 
 const AboutUs = () => (
@@ -13,7 +14,7 @@ const AboutUs = () => (
         href="/favicon.ico"
       />
     </Head>
-    <div>About us</div>
+    <SignUpContainer />
   </>
 );
 
