@@ -39,7 +39,8 @@ const useAnswers = () => {
     [setCourse, setIsOpenCourseInput]
   );
   const switchCourseInput = useCallback(() => {
-    setIsOpenCourseInput((prev) => !prev); setCourse('');
+    setIsOpenCourseInput((prev) => !prev);
+    setCourse('');
   }, [setIsOpenCourseInput, setCourse]);
   const onCourseChange = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => setCourse(e.target.value),

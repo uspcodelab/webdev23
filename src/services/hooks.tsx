@@ -1,4 +1,4 @@
-import { Answers } from '@/pages/signup/context/models';
+import { Answers } from '@/containers/SignUp/context/models';
 import { useQuery } from 'react-query';
 import { postSignup } from './googleSpreadsheets';
 

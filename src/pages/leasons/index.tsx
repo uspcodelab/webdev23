@@ -2,15 +2,15 @@ import { getYoutubePlaylist } from '@/services/youtube';
 import Head from 'next/head';
 
 export const getServerSideProps = async () => {
-  const data = getYoutubePlaylist('PL4ZDKpM7CWu-Odmud7VlRXp5EK0LKZstd');
+  const data = await getYoutubePlaylist('PL4ZDKpM7CWu-Odmud7VlRXp5EK0LKZstd');
   return {
     props: {
       data
     }
-  }
-}
+  };
+};
 
-const Leasons = ({data}: any) => {console.log(data); return (
+const Leasons = ({ data }: any) => (
   <>
     <Head>
       <title>Aulas</title>
@@ -25,6 +25,6 @@ const Leasons = ({data}: any) => {console.log(data); return (
     </Head>
     <div>Videos</div>
   </>
-)};
+);
 
 export default Leasons;

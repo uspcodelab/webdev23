@@ -1,10 +1,5 @@
+import SignUpContainer from '@/containers/SignUp/';
 import Head from 'next/head';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { LoadingProvider } from '../../components/Loading';
-import Content from './components/Content';
-import { SignUpProvider } from './context';
-
-const queryClient = new QueryClient();
 
 const SignUp = () => (
   <>
@@ -19,13 +14,7 @@ const SignUp = () => (
         href="/favicon.ico"
       />
     </Head>
-    <QueryClientProvider client={queryClient}>
-      <LoadingProvider>
-        <SignUpProvider>
-          <Content />
-        </SignUpProvider>
-      </LoadingProvider>
-    </QueryClientProvider>
+    <SignUpContainer />
   </>
 );
 

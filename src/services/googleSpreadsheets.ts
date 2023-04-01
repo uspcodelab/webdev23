@@ -1,4 +1,4 @@
-import { Answers } from '@/pages/signup/context/models';
+import { Answers } from '@/containers/SignUp/context/models';
 
 const GOOGLE_SPREADSHEETS_PATH = process.env.NEXT_PUBLIC_GOOGLESHEETS_API;
 
