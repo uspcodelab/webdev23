@@ -1,6 +1,16 @@
+import { getYoutubePlaylist } from '@/services/youtube';
 import Head from 'next/head';
 
-const Leasons = () => (
+export const getServerSideProps = async () => {
+  const data = getYoutubePlaylist('PL4ZDKpM7CWu-Odmud7VlRXp5EK0LKZstd');
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+const Leasons = ({data}: any) => {console.log(data); return (
   <>
     <Head>
       <title>Aulas</title>
@@ -13,8 +23,8 @@ const Leasons = () => (
         href="/favicon.ico"
       />
     </Head>
-    <div>Leasons</div>
+    <div>Videos</div>
   </>
-);
+)};
 
 export default Leasons;

@@ -11,7 +11,7 @@ export const useQuestion = () => {
 
   useEffect(
     () => (initialRender ? setInitialRender(false) : setShow(false)),
-    [step]
+    [step, initialRender]
   );
 
   const updateStep = useCallback(() => {

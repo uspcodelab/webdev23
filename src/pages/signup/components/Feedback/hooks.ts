@@ -10,7 +10,7 @@ export const useFeedback = () => {
 
   useEffect(() => {
     setIsLoading(isLoading);
-  }, [isLoading]);
+  }, [isLoading, setIsLoading]);
 
   return { isError, isSuccess };
 };

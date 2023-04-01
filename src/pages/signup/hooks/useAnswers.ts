@@ -23,7 +23,7 @@ const useAnswers = () => {
       setEmailError('');
       setEmail(e.target.value);
     },
-    [setEmail]
+    [setEmail, setEmailError]
   );
 
   const [isOpenCourseInput, setIsOpenCourseInput] = useState<boolean>(false);
@@ -39,8 +39,8 @@ const useAnswers = () => {
     [setCourse, setIsOpenCourseInput]
   );
   const switchCourseInput = useCallback(() => {
-    setIsOpenCourseInput((prev) => !prev), setCourse('');
-  }, [setIsOpenCourseInput]);
+    setIsOpenCourseInput((prev) => !prev); setCourse('');
+  }, [setIsOpenCourseInput, setCourse]);
   const onCourseChange = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => setCourse(e.target.value),
     [setCourse]

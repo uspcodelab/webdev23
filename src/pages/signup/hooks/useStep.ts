@@ -38,7 +38,7 @@ const useStep = () => {
       setIsLoading(false);
     }
     setStep(step + 1);
-  }, [step, setStep]);
+  }, [step, setStep, setIsLoading, setEmailError, answers.email]);
   const onPrevious = useCallback(() => setStep(step - 1), [step, setStep]);
 
   return {
