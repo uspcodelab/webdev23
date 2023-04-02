@@ -17,6 +17,7 @@ export const StyledOptions = styled.button<StyledOptionsProps>`
   min-width: 42px;
 
   transition: 0.3s;
+  cursor: pointer;
 `;
 
 export const StyledWrapper = styled.div`
