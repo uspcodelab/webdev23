@@ -32,7 +32,7 @@ const Question = () => {
       >
         <Input />
       </StyledFader>
-      <Progress value={(currentStep + 1)  / 3}/>
+      <Progress value={(currentStep + 1) / 3} />
       <ActionBar currentStep={currentStep} />
     </StyledWrapper>
   );

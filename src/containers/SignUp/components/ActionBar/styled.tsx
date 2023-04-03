@@ -15,5 +15,5 @@ export const StyledWrapper = styled.div`
 
   @media screen and (max-width: 561px) {
     width: calc(100vw - 48px);
-   }
+  }
 `;

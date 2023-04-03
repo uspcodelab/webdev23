@@ -1,6 +1,7 @@
 import Select from '../../../../../components/Select';
 import useAnswers from '../../../hooks/useAnswers';
 import { StyledInput, StyledWrapper } from '../styled';
+import { COURSE_OPTIONS, YEAR_OPTIONS } from './constants';
 import { StyledCaption } from './styled';
 
 const Course = () => {
@@ -27,12 +28,7 @@ const Course = () => {
           <Select<string>
             selectedValue={course}
             onChange={onCourseSelect}
-            options={[
-              { value: 'BCC', label: 'BCC' },
-              { value: 'BMAC', label: 'BMAC' },
-              { value: 'LIC', label: 'LIC' },
-              { value: 'ESTAT', label: 'ESTAT' }
-            ]}
+            options={COURSE_OPTIONS}
           />
         )}
       </div>
@@ -45,12 +41,7 @@ const Course = () => {
       <Select<1 | 2 | 3 | 4>
         selectedValue={year}
         onChange={onYearSelect}
-        options={[
-          { value: 1, label: '1' },
-          { value: 2, label: '2' },
-          { value: 3, label: '3' },
-          { value: 4, label: '4+' }
-        ]}
+        options={YEAR_OPTIONS}
       />
     </StyledWrapper>
   );

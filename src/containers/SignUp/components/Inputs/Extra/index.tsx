@@ -11,9 +11,9 @@ const Extra = () => {
       <div>Qual o seu nível com Desenvolvimento Web?</div>
       <Select<1 | 2 | 3>
         options={[
-          { value: 3, label: 'Manjo muito' },
+          { value: 1, label: 'Não faço nem ideia' },
           { value: 2, label: 'Sei o que é' },
-          { value: 1, label: 'Não faço nem ideia' }
+          { value: 3, label: 'Manjo muito' }
         ]}
         selectedValue={knowledge}
         onChange={onKnowledgeSelect}

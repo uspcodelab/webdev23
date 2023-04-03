@@ -20,5 +20,5 @@ export const StyledModal = styled.div`
   @media screen and (max-width: 561px) {
     width: calc(100vw - 48px);
     height: calc(100vh - 120px - 48px);
-   }
+  }
 `;
