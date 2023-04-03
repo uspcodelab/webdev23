@@ -13,6 +13,8 @@ const Error = () => (
     />
     <StyledTitle>Tivemos algum problema</StyledTitle>
     <div>Tente de novo mais tarde</div>
+    <div>Se o erro persistir entre em contato com a gente:</div>
+    <div>codelab@ime.usp.br</div>
   </StyledWrapper>
 );
 
